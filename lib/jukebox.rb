@@ -32,19 +32,11 @@ def play(songs)
   puts "Please enter a song name or number:"
   u_input = gets.strip
   
-  i = 0
-  while i < songs.length do
+  songs.each_with_index do |song, i_song|
     
-    if u_input == songs[i] || u_input == (i + 1)
-      
-      puts "Playing #{songs[i]}"
-      i += 1
-    else
-      puts "Invalid input, please try again"
-      return nil
+    if u_input == song || u_input.to_i == (i_song + 1)
+      puts "Playing #{song}"
     end
-    
-  # binding.pry 
     
   end
   
