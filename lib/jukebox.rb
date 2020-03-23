@@ -38,8 +38,12 @@ def play(songs)
       puts "Playing #{song}"
     end
     
+    if u_input != song && u_input.to_i != (i_song + 1)
+      puts "Invalid input, please try again"
+    end
+    
   end
-  puts "Invalid input, please try again"
+  
   
 end
 
