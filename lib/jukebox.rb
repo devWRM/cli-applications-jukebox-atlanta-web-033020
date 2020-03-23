@@ -35,6 +35,9 @@ def play(songs)
   i = 0
   while i < songs.length do
     if u_input == songs[i] || u_input == (i + 1)
+      
+  binding.pry
+      
       puts "Playing #{songs[i]}"
       i += 1
     else
