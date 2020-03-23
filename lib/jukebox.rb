@@ -35,11 +35,7 @@ def play(songs)
   i = 0
   while i < songs.length do
     
-   binding.pry 
-    
     if u_input == songs[i] || u_input == (i + 1)
-      
-  
       
       puts "Playing #{songs[i]}"
       i += 1
@@ -47,6 +43,8 @@ def play(songs)
       puts "Invalid input, please try again"
       return nil
     end
+    
+  binding.pry 
     
   end
   
