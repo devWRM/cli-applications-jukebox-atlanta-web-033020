@@ -36,12 +36,11 @@ def play(songs)
     
     if u_input == song || u_input.to_i == (i_song + 1)
       puts "Playing #{song}"
-    else
-      nil
     end
     
   end
   puts "Invalid input, please try again"
+  
 end
 
 
