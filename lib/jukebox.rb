@@ -39,9 +39,9 @@ def play(songs)
     else
       nil
     end
-    
+    puts "Invalid input, please try again"
   end
-  puts "Invalid input, please try again"
+  
 end
 
 
