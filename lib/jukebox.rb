@@ -39,8 +39,9 @@ def play(songs)
       i += 1
     else
       puts "Invalid input, please try again"
+      return nil
     end
-    nil
+    
   end
   
 end
